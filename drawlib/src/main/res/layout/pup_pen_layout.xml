@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/bottom_tool_bg_shape"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/pen_type_pup_ly"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+      <ImageView
+          android:layout_width="28dp"
+          android:layout_height="28dp"
+          android:padding="4dp"
+          android:tag="pen"
+          android:background="@drawable/shape_circle_alpha_selector"
+          android:src="@drawable/normal_pen"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="6dp"
+            android:background="@drawable/shape_circle_alpha_selector"
+            android:layout_marginTop="5dp"
+            android:tag="brush"
+            android:visibility="gone"
+            android:src="@drawable/tiem_pen"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="6dp"
+            android:layout_marginTop="5dp"
+            android:tag="lightpen"
+            android:background="@drawable/shape_circle_alpha_selector"
+            android:src="@drawable/aplpha_pen"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0.56dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#15000000"
+        />
+
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:id="@+id/pen_pup_pensize_ly"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/draw_white_color"
+                android:textSize="14sp"
+                android:text="@string/draw_pen_size"/>
+
+            <ImageView
+                android:layout_width="@dimen/pen_circle_size"
+                android:layout_height="@dimen/pen_circle_size"
+                android:clickable="true"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/pen_size_small_selector"/>
+
+            <ImageView
+                android:layout_width="@dimen/pen_circle_size"
+                android:layout_height="@dimen/pen_circle_size"
+                android:clickable="true"
+                android:src="@drawable/pen_size_middle_selector"/>
+
+            <ImageView
+                android:layout_width="@dimen/pen_circle_size"
+                android:layout_height="@dimen/pen_circle_size"
+                android:clickable="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/pen_size_large_selector"/>
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/draw_white_color"
+                    android:text="@string/draw_pen_color"/>
+                <ImageView
+                    android:id="@+id/pen_pup_c_color"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/pen_pup_colors"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/colors"
+                    />
+
+
+            </LinearLayout>
+            <GridView
+                android:id="@+id/pen_color_pup_grid"
+                android:layout_width="match_parent"
+                android:numColumns="3"
+                android:verticalSpacing="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

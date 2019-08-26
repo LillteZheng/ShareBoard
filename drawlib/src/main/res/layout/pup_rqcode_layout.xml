@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_tool_bg_shape"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <ImageView
+            android:id="@+id/menu_bg_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/blue_circle_ripple"
+            android:clickable="true"
+            android:padding="3dp"
+            android:src="@drawable/draw_back" />
+
+        <TextView
+            android:id="@+id/menu_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/draw_share"
+            android:textColor="@color/draw_white_color"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/draw_white_color"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:text="@string/scan_join_share"/>
+
+    <ImageView
+        android:id="@+id/pup_rq_iv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"/>
+
+
+</LinearLayout>

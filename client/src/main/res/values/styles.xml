@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/main_color</item>
+    </style>
+
+    <style name="window_alpha">
+        <item name="android:windowEnterAnimation">@anim/window_show</item>
+        <item name="android:windowExitAnimation">@anim/window_dismiss</item>
+    </style>
+
+    <style name="DrawStyle" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

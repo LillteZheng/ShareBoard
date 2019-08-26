@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/draw_settings"
+            android:textColor="@color/draw_white_color"
+            android:layout_gravity="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/draw_version"
+            android:textColor="@color/draw_white_ff"
+            android:layout_gravity="right"
+            android:layout_margin="4dp"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.56dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/draw_dialog_color" />
+
+
+    <LinearLayout
+        android:id="@+id/menu_setting_ly1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.zhengsr.drawlib.view.BottomItem
+            android:id="@+id/menu_setting_bg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:bt_img_height="@dimen/draw_img_size"
+            app:bt_img_src="@drawable/draw_setting_bg"
+            app:bt_img_width="@dimen/draw_img_size"
+            app:bt_txt_color="@color/draw_white_color"
+            app:bt_txt_size="@dimen/draw_textsize"
+            app:bt_txt_text="@string/draw_bg" />
+
+        <com.zhengsr.drawlib.view.BottomItem
+            android:id="@+id/menu_setting_image"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:bt_img_height="@dimen/draw_img_size"
+            app:bt_img_src="@drawable/draw_settings_insert_image"
+            app:bt_img_width="@dimen/draw_img_size"
+            app:bt_txt_color="@color/draw_white_color"
+            app:bt_txt_size="@dimen/draw_textsize"
+            app:bt_txt_text="@string/draw_insert_image" />
+
+        <com.zhengsr.drawlib.view.BottomItem
+            android:id="@+id/menu_setting_rqcode"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:bt_img_height="@dimen/draw_img_size"
+            app:bt_img_src="@drawable/draw_settings_rqcode"
+            app:bt_img_width="@dimen/draw_img_size"
+            app:bt_txt_color="@color/draw_white_color"
+            app:bt_txt_size="@dimen/draw_textsize"
+            app:bt_txt_text="@string/draw_share" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/menu_setting_ly2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.zhengsr.drawlib.view.BottomItem
+            android:id="@+id/menu_setting_email"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:bt_img_height="@dimen/draw_img_size"
+            app:bt_img_src="@drawable/draw_setting_email"
+            app:bt_img_width="@dimen/draw_img_size"
+            app:bt_txt_color="@color/draw_white_color"
+            app:bt_txt_size="@dimen/draw_textsize"
+            app:bt_txt_text="@string/draw_email" />
+
+        <com.zhengsr.drawlib.view.BottomItem
+            android:id="@+id/menu_setting_save"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:bt_img_height="@dimen/draw_img_size"
+            app:bt_img_src="@drawable/draw_settings_save"
+            app:bt_img_width="@dimen/draw_img_size"
+            app:bt_txt_color="@color/draw_white_color"
+            app:bt_txt_size="@dimen/draw_textsize"
+            app:bt_txt_text="@string/draw_save" />
+
+        <com.zhengsr.drawlib.view.BottomItem
+            android:id="@+id/menu_setting_more"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:bt_img_height="@dimen/draw_img_size"
+            app:bt_img_src="@drawable/draw_settings_more"
+            app:bt_img_width="@dimen/draw_img_size"
+            app:bt_txt_color="@color/draw_white_color"
+            app:bt_txt_size="@dimen/draw_textsize"
+            app:bt_txt_text="@string/draw_more" />
+    </LinearLayout>
+
+</LinearLayout>

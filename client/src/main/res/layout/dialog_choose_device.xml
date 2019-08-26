@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:text="@string/choose_device"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_scan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/scan_connect"
+                android:textColor="@color/main_color"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0.56dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#15000000" />
+
+            <TextView
+                android:id="@+id/dialog_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/scan_device"
+                android:textColor="@color/main_color"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0.56dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#15000000" />
+
+            <TextView
+                android:id="@+id/dialog_net"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/network"
+                android:textColor="@color/main_color"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.56dp"
+            android:background="#15000000" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+
+            <ListView
+                android:id="@+id/dialog_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/dialog_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/wechat_color"
+                android:text="@string/no_device_found"/>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.56dp"
+            android:background="#15000000" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="@color/wechat_color"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="0.56dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#15000000" />
+
+            <TextView
+                android:id="@+id/dialog_comfire"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@color/wechat_color"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

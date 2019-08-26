@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">drawlib</string>
+    <string name="draw_pen_size">画笔大小</string>
+    <string name="draw_color_more"><![CDATA[更多>>]]></string>
+    <string name="draw_pen_color">当前颜色</string>
+    <string name="draw_save_file">正在保存图片: %1$d / %2$d</string>
+    <string name="draw_save_bg_success">图片保存成功</string>
+    <string name="draw_meet_record">会议记录</string>
+    <string name="draw_save_bg_fail">图片保存失败</string>
+    <string name="draw_settings">设置</string>
+    <string name="draw_version">v1.0</string>
+    <string name="draw_insert_image">素材</string>
+    <string name="draw_bg">背景</string>
+    <string name="draw_rqcode">二维码</string>
+    <string name="draw_erase">橡皮擦</string>
+    <string name="draw_save">保存</string>
+    <string name="draw_email">邮件</string>
+    <string name="draw_more">更多</string>
+    <string name="inner_storage">内部存储</string>
+    <string name="draw_save_source_code">源文件</string>
+    <string name="draw_bitmap">图片</string>
+    <string name="btn_concel">取消</string>
+    <string name="btn_comfire">确定</string>
+    <string name="file_type">文件类型:</string>
+    <string name="file_name">名称:</string>
+    <string name="save_default_name">白板文件%1$s</string>
+    <string name="scan_join_share">扫一扫，加入协同</string>
+    <string name="draw_share">协同白板</string>
+    <string name="draw_sure">确定</string>
+</resources>

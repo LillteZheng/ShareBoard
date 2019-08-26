@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PupAnim">
+        <item name="android:windowEnterAnimation">@anim/pup_show</item>
+        <item name="android:windowExitAnimation">@anim/pup_dismiss</item>
+    </style>
+
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/draw_white_color</item>
+        <item name="colorControlActivated">@color/draw_blue_color</item>
+    </style>
+</resources>

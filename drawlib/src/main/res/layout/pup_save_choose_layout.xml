@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <ImageView
+            android:id="@+id/menu_bg_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/blue_circle_ripple"
+            android:clickable="true"
+            android:padding="3dp"
+            android:src="@drawable/draw_back" />
+
+        <TextView
+            android:id="@+id/menu_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/draw_save"
+            android:textColor="@color/draw_white_color"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.56dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/draw_dialog_color" />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/pup_save_radio_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:padding="0dp"
+            android:text="@string/draw_save_source_code"
+            android:textColor="@color/draw_white_color"
+            android:textSize="14sp"
+            android:theme="@style/MyRadioButton" />
+
+        <RadioButton
+            android:id="@+id/pup_save_radio_bitmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:checked="true"
+            android:padding="0dp"
+            android:text="@string/draw_bitmap"
+            android:textColor="@color/draw_white_color"
+            android:textSize="14sp"
+            android:theme="@style/MyRadioButton" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/file_name"
+            android:textColor="@color/draw_white_color"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/pup_save_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textColor="@color/draw_white_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.56dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/draw_dialog_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menu_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="1dp"
+            android:text="@string/btn_concel"
+            android:textColor="@color/white_color_selector"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="0.56dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/draw_dialog_color" />
+
+        <Button
+            android:id="@+id/menu_btn_comfire"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="1dp"
+            android:text="@string/btn_comfire"
+            android:textColor="@color/white_color_selector"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

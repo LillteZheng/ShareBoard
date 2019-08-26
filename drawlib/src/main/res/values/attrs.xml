@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomItem">
+        <attr name="bt_img_width" format="dimension|integer"/>
+        <attr name="bt_img_height" format="dimension|integer"/>
+        <attr name="bt_img_src" format="reference"/>
+        <attr name="bt_txt_text" format="reference|string"/>
+        <attr name="bt_txt_size" format="dimension|integer"/>
+        <attr name="bt_txt_color" format="reference|color"/>
+
+        <attr name="bt_txt_t_text" format="reference|string"/>
+        <attr name="bt_txt_t_size" format="dimension|integer"/>
+        <attr name="bt_txt_t_color" format="reference|color"/>
+        <attr name="bt_notenable_color" format="reference|color"/>
+        <attr name="bt_showgray" format="boolean"/>
+
+    </declare-styleable>
+    
+    <declare-styleable name="RoundImageView">
+        <attr name="round_sise" format="dimension|integer"/>
+    </declare-styleable>
+</resources>

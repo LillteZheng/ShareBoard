@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/main_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="14dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:text="@string/exit"
+            android:textColor="@color/main_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/client"
+            android:textColor="@color/main_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/main_setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="14dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="2dp"
+            android:src="@mipmap/ic_settings_normal" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/main_choose_ly"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#dbe9f8"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/device_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="@string/no_device_connected"
+            android:textColor="#da5151"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="20dp"
+            android:text="@string/choose_device"
+            android:textColor="@color/main_color"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="3dp"
+            android:src="@mipmap/right_back" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/share_board_ly"
+        android:layout_width="260dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:background="@mipmap/synergism_background_normal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/share_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="@string/draw_share"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+</LinearLayout>

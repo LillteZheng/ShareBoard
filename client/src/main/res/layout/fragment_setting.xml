@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    app:divider="@drawable/line"
+    app:dividerPadding="1dp"
+    app:showDividers="middle|end"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/setting_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="2dp"
+            android:src="@mipmap/left_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/settings"
+            android:textColor="@color/main_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/check_version"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="@string/check_version"
+            android:textColor="@color/wechat_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/wechat_color"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="5dp"
+            android:src="@mipmap/right_back" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/device_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="@string/device_name"
+            android:textColor="@color/wechat_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/setting_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/wechat_color"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="5dp"
+            android:src="@mipmap/right_back" />
+
+    </FrameLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

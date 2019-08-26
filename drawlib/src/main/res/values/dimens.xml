@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pen_pup_width">300dp</dimen>
+    <dimen name="pen_pup_height">150dp</dimen>
+    <dimen name="pen_circle_size">25dp</dimen>
+
+    <dimen name="draw_img_size">25dp</dimen>
+    <dimen name="draw_item_size">40dp</dimen>
+    <dimen name="draw_textsize">14sp</dimen>
+
+    <dimen name="draw_settings_pup_width">220dp</dimen>
+    <dimen name="draw_settings_pup_height">190dp</dimen>
+    
+    <dimen name="draw_save_width">480dp</dimen>
+    <dimen name="draw_save_height">320dp</dimen>
+
+    <dimen name="insert_image_width">200dp</dimen>
+    <dimen name="insert_image_height">120dp</dimen>
+    <dimen name="draw_item_image_width">100dp</dimen>
+    <dimen name="draw_item_image_height">65dp</dimen>
+
+    <dimen name="draw_save_type_width">190dp</dimen>
+
+    <dimen name="draw_erase_pup_height">33dp</dimen>
+
+
+    <dimen name="base_1dp">1dp</dimen>
+
+</resources>

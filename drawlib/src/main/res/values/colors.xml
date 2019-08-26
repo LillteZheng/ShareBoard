@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 蓝 -->
+    <color name="draw_blue_color">#179dfe</color>
+    <!-- 绿 -->
+    <color name="draw_green_color">#19df0e</color>
+    <!-- 黑 -->
+    <color name="draw_black_color">#000000</color>
+
+    <!-- 红  -->
+    <color name="draw_red_color">#ff1d11</color>
+    <!-- 黄 -->
+    <color name="draw_yellow_color">#fcf600</color>
+    <!-- 白-->
+    <color name="draw_white_color">#ffffff</color>
+    <color name="draw_dialog_color">#15000000</color>
+    <color name="draw_white_ff">#e0cacaca</color>
+
+    <color name="draw_default">#4C596B</color>
+    <color name="draw_deep_gray">#333b3e</color>
+    <color name="draw_line_bg_color">#D3D3D3</color>
+    <color name="draw_line_color">#272727</color>
+
+    <color name="draw_wechat_color">#322322</color>
+</resources>

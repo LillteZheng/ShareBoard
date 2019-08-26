@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+
+    <com.zhengsr.drawlib.view.WhiteBoardView
+        android:id="@+id/whiteboradview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="#aa000000"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"  />
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_ly"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:clipChildren="false">
+
+
+        <FrameLayout
+            android:layout_width="@dimen/bottom_item_size"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bottom_tool_bg_shape"
+            android:padding="0dp">
+
+            <com.zhengsr.drawlib.view.BottomItem
+                android:id="@+id/bottom_exit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottom_tool_bg_shape"
+                app:bt_img_height="@dimen/bottom_img_size"
+                app:bt_img_src="@mipmap/bottom_tool_exit"
+                app:bt_img_width="@dimen/bottom_img_size"
+                app:bt_txt_color="@color/white"
+                app:bt_txt_size="@dimen/bottom_textsize"
+                app:bt_txt_text="@string/exit" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bottom_center_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/bottom_more_ly"
+            android:background="@drawable/bottom_tool_bg_shape">
+
+            <com.zhengsr.drawlib.view.BottomItem
+                android:id="@+id/bottom_pen"
+                android:layout_width="@dimen/bottom_item_size"
+                android:layout_height="match_parent"
+                app:bt_img_height="@dimen/bottom_img_size"
+                app:bt_img_src="@mipmap/bottom_tool_write_laser_white"
+                app:bt_img_width="@dimen/bottom_img_size"
+                app:bt_txt_color="@color/white"
+                app:bt_txt_size="@dimen/bottom_textsize"
+                app:bt_txt_text="@string/pen" />
+
+
+            <com.zhengsr.drawlib.view.BottomItem
+                android:id="@+id/bottom_erase"
+                android:layout_width="@dimen/bottom_item_size"
+                android:layout_height="match_parent"
+                app:bt_img_height="@dimen/bottom_img_size"
+                app:bt_img_src="@mipmap/bottom_tool_erase"
+                app:bt_img_width="@dimen/bottom_img_size"
+                app:bt_txt_color="@color/white"
+                app:bt_txt_size="@dimen/bottom_textsize"
+                app:bt_txt_text="@string/erase" />
+
+            <com.zhengsr.drawlib.view.BottomItem
+                android:id="@+id/bottom_undo"
+                android:layout_width="@dimen/bottom_item_size"
+                android:layout_height="match_parent"
+                app:bt_img_height="@dimen/bottom_img_size"
+                app:bt_img_src="@mipmap/bottom_tool_undo"
+                app:bt_img_width="@dimen/bottom_img_size"
+                app:bt_notenable_color="@color/gray_ff"
+                app:bt_showgray="true"
+                app:bt_txt_color="@color/white"
+                app:bt_txt_size="@dimen/bottom_textsize"
+                app:bt_txt_text="@string/undo" />
+
+            <com.zhengsr.drawlib.view.BottomItem
+                android:id="@+id/bottom_redo"
+                android:layout_width="@dimen/bottom_item_size"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:bt_img_height="@dimen/bottom_img_size"
+                app:bt_img_src="@mipmap/bottom_tool_redo"
+                app:bt_img_width="@dimen/bottom_img_size"
+                app:bt_notenable_color="@color/gray_ff"
+                app:bt_showgray="true"
+                app:bt_txt_color="@color/white"
+                app:bt_txt_size="@dimen/bottom_textsize"
+                app:bt_txt_text="@string/redo" />
+
+            <com.zhengsr.drawlib.view.BottomItem
+                android:id="@+id/bottom_gesture"
+                android:layout_width="@dimen/bottom_item_size"
+                android:layout_height="match_parent"
+                app:bt_img_height="@dimen/bottom_img_size"
+                app:bt_img_src="@mipmap/bottom_gesture"
+                app:bt_img_width="@dimen/bottom_img_size"
+                app:bt_notenable_color="@color/gray_ff"
+                app:bt_showgray="true"
+                app:bt_txt_color="@color/white"
+                app:bt_txt_size="@dimen/bottom_textsize"
+                app:bt_txt_text="@string/gesture" />
+
+
+            <com.zhengsr.drawlib.view.BottomItem
+                android:layout_width="@dimen/bottom_item_size"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:bt_img_height="@dimen/bottom_img_size"
+                app:bt_img_src="@mipmap/bottom_tool_gesture"
+                app:bt_img_width="@dimen/bottom_img_size"
+                app:bt_notenable_color="@color/gray_ff"
+                app:bt_txt_color="@color/white"
+                app:bt_txt_size="@dimen/bottom_textsize"
+                app:bt_txt_text="@string/gesture" />
+
+            <com.zhengsr.drawlib.view.BottomItem
+                android:id="@+id/bottom_clear"
+                android:layout_width="@dimen/bottom_item_size"
+                android:layout_height="match_parent"
+                app:bt_img_height="@dimen/bottom_img_size"
+                app:bt_img_src="@mipmap/bottom_clear_normal"
+                app:bt_img_width="@dimen/bottom_img_size"
+                app:bt_showgray="true"
+                app:bt_txt_color="@color/white"
+                app:bt_txt_size="@dimen/bottom_textsize"
+                app:bt_txt_text="@string/clear_draw" />
+
+            <com.zhengsr.drawlib.view.BottomItem
+                android:id="@+id/bottom_draw_settings"
+                android:layout_width="@dimen/bottom_item_size"
+                android:layout_height="match_parent"
+                app:bt_img_height="@dimen/bottom_img_size"
+                app:bt_img_src="@mipmap/bottom_draw_settings"
+                app:bt_img_width="@dimen/bottom_img_size"
+                app:bt_txt_color="@color/white"
+                app:bt_txt_size="@dimen/bottom_textsize"
+                app:bt_txt_text="@string/settings" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/bottom_more_ly"
+            android:layout_width="@dimen/bottom_item_size"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/bottom_page_ly"
+            android:background="@drawable/bottom_tool_bg_shape"
+            android:padding="0dp">
+
+            <com.zhengsr.drawlib.view.BottomItem
+                android:id="@+id/bottom_page_more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:bt_img_height="@dimen/bottom_img_size"
+                app:bt_img_src="@mipmap/bottom_tool_page_more"
+                app:bt_img_width="@dimen/bottom_img_size"
+                app:bt_txt_color="@color/white"
+                app:bt_txt_size="@dimen/bottom_textsize"
+                app:bt_txt_text="@string/page_more" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_page_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/bottom_tool_bg_shape"
+            android:orientation="horizontal">
+
+            <com.zhengsr.drawlib.view.BottomItem
+                android:id="@+id/bottom_pre_page"
+                android:layout_width="@dimen/bottom_item_size"
+                android:layout_height="match_parent"
+                app:bt_img_height="@dimen/bottom_img_size"
+                app:bt_img_src="@mipmap/bottom_tool_pre_page"
+                app:bt_img_width="@dimen/bottom_img_size"
+                app:bt_notenable_color="@color/gray_ff"
+                app:bt_showgray="true"
+                app:bt_txt_color="@color/white"
+                app:bt_txt_size="@dimen/bottom_textsize"
+                app:bt_txt_text="@string/page_pre" />
+
+
+            <com.zhengsr.drawlib.view.BottomItem
+                android:id="@+id/bottom_page_num"
+                android:layout_width="@dimen/bottom_item_size"
+                android:layout_height="match_parent"
+                app:bt_txt_color="@color/white"
+                app:bt_txt_size="@dimen/bottom_textsize"
+                app:bt_txt_t_color="@color/white"
+                app:bt_txt_t_size="16sp"
+                app:bt_txt_text="@string/page_num" />
+
+            <com.zhengsr.drawlib.view.BottomItem
+                android:id="@+id/bottom_next_page"
+                android:layout_width="@dimen/bottom_item_size"
+                android:layout_height="match_parent"
+                app:bt_img_height="@dimen/bottom_img_size"
+                app:bt_img_src="@mipmap/bottom_tool_next_page"
+                app:bt_img_width="@dimen/bottom_img_size"
+                app:bt_notenable_color="@color/gray_ff"
+                app:bt_showgray="true"
+                app:bt_txt_color="@color/white"
+                app:bt_txt_size="@dimen/bottom_textsize"
+                app:bt_txt_text="@string/page_next" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

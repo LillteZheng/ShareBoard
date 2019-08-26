@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ShareWhiteBroad</string>
+    <string name="pen">画笔</string>
+    <string name="erase">橡皮擦</string>
+    <string name="settings">设置</string>
+    <string name="undo">撤回</string>
+    <string name="redo">前进</string>
+    <string name="clear_draw">清屏</string>
+    <string name="page_more">新建页</string>
+    <string name="page_pre">上一页</string>
+    <string name="page_next">下一页</string>
+    <string name="page_num">页数</string>
+    <string name="page_t_num">%1$d/%2$d</string>
+    <string name="page_can_noly">最多只能创建%1$d</string>
+    <string name="no_next_page">已经到最后一页了</string>
+    <string name="no_pre_page">已经是最新一页</string>
+    <string name="gesture">手势</string>
+    <string name="exit">退出</string>
+    <string name="insert_image">素材</string>
+    <string name="more">更多</string>
+</resources>
